@@ -1,0 +1,16 @@
+generated: '2026-09-26'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/autobooks
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (autobooks.co,
+  security/autobooks-domain-security.yml) or its accepted GitHub org (autobooks).'
+packages:
+- name: interview-dotnet3
+  registry: github
+  url: https://github.com/autobooks/interview-dotnet3
+  language: C#
+  official: true
+  version: null
+  published: '2021-12-31'
+  source_repo: https://github.com/autobooks/interview-dotnet3
+  evidence: repository in github.com/autobooks, whose profile names the provider's domain

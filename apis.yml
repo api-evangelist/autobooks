@@ -1,23 +1,85 @@
 aid: autobooks
+
 name: Autobooks
-description: 'Autobooks is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Autobooks provides a connected banking platform for small businesses, offering invoicing, payment links, checkout pages, tap‑to‑pay, bill payment, accounting, lending and cash‑balance tools. It integrates receivables, payables and financial reporting into digital banking, enabling businesses and their banks to see real‑time financial activity.'
+
 url: https://raw.githubusercontent.com/api-evangelist/autobooks/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- FinTech
+- Banking
+- Payments
+- Small Business
+- Accounting
+- Lending
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: SecurityTxt
+  url: well-known/autobooks-status-security.txt
+- type: WellKnown
+  url: well-known/autobooks-well-known.yml
+- type: Hosts
+  url: hosts/autobooks-hosts.yml
+- type: Vendors
+  url: vendors/autobooks-vendors.yml
+- type: SDKs
+  url: packages/autobooks-packages.yml
+- type: Packages
+  url: packages/autobooks-packages.yml
+- type: Support
+  url: https://help.autobooks.co/knowledge
+- type: StatusPage
+  url: https://status.autobooks.co/
+- type: Pricing
+  url: https://www.autobooks.co/pricing-calculator
+- type: Login
+  url: https://www.autobooks.co/login
+- type: Blog
+  url: https://blog.autobooks.co/?hsLang=en-us
+- type: GettingStarted
+  url: https://help.autobooks.co/knowledge/optimize-your-invoice-tool-setup
+- type: Documentation
+  url: https://dev.autobooks.co/
+- type: GitHubOrganization
+  url: https://github.com/autobooks
+- type: DomainSecurity
+  url: security/autobooks-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.autobooks.co/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Autobooks provides public documentation but no machine‑readable OpenAPI, GraphQL, or AsyncAPI spec was found.
+  evidence:
+    - url: https://www.autobooks.co/guides
+      status: 200
+  checked: '2026-09-26'
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
