@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/autobooks/integrations
+- https://n8n.io/integrations/autobooks/
+- https://composio.dev/toolkits/autobooks
+- https://monid.ai/tools/autobooks
+checked:
+- https://composio.dev/toolkits/autobooks
+- https://monid.ai/tools/autobooks
+- https://n8n.io/integrations/autobooks/
+- https://zapier.com/apps/autobooks/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
